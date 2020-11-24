@@ -1,0 +1,204 @@
+        game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "Break In";
+        Text = "Developed by Stackz#2898";
+        })
+wait(0.5)
+local library = loadstring(game:HttpGet(('https://pastebin.com/raw/FsJak6AT')))() -- It's obfuscated, I won't let you see my ugly coding skills. =)
+
+local w = library:CreateWindow("Hentai Haven")
+
+local b = w:CreateFolder("Break In")
+
+b:Label("Stackz#2898",Color3.fromRGB(91,190,44),Color3.fromRGB(25,25,25)) --BgColor,TextColor
+
+b:Button("Chips (BEST)",function()
+        game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "Giving..";
+        Text = "90%Air, 10%Chips.";
+        })
+game:GetService("ReplicatedStorage").RemoteEvents.GiveTool:FireServer("Chips")
+end)
+
+b:Button("Lollipop",function()
+        game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "Giving..";
+        Text = "This is a gamepass snack.";
+        })
+game:GetService("ReplicatedStorage").RemoteEvents.GiveTool:FireServer("Lollipop")
+end)
+
+b:Button("EPICPizza",function()
+        game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "Giving..";
+        Text = "Epiccc.";
+        })
+game:GetService("ReplicatedStorage").RemoteEvents.GiveTool:FireServer("EpicPizza")
+end)
+
+b:Button("Pizza",function()
+        game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "Giving..";
+        Text = "I prefer the EPIC pizza.";
+        })
+game:GetService("ReplicatedStorage").RemoteEvents.GiveTool:FireServer("Pizza2")
+end)
+
+b:Button("MedKit",function()
+        game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "Giving..";
+        Text = "Heal all with this in misc.";
+        })
+game:GetService("ReplicatedStorage").RemoteEvents.GiveTool:FireServer("MedKit")
+end)
+
+b:Button("Apple",function()
+        game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "Giving..";
+        Text = "I like the green ones tho.";
+        })
+game:GetService("ReplicatedStorage").RemoteEvents.GiveTool:FireServer("Apple")
+end)
+
+b:Button("Cookie",function()
+        game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "Giving..";
+        Text = "My grandma makes better.";
+        })
+game:GetService("ReplicatedStorage").RemoteEvents.GiveTool:FireServer("Cookie")
+end)
+
+b:Button("Soda",function()
+        game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "Giving..";
+        Text = "I prefer Dr pepper.";
+        })
+game:GetService("ReplicatedStorage").RemoteEvents.GiveTool:FireServer("BloxyCola")
+end)
+
+b:Button("Basement key",function()
+game:GetService("ReplicatedStorage").RemoteEvents.GiveTool:FireServer("Key")
+end)
+
+b:Button("Baseball Bat",function()
+        game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "Giving..";
+        Text = "There you go boss.";
+        })
+game:GetService("ReplicatedStorage").RemoteEvents.GiveTool:FireServer("Bat")
+end)
+
+local b = w:CreateFolder("OP")
+
+b:Label("OverPowered Scripts",Color3.fromRGB(91,190,44),Color3.fromRGB(25,25,25)) --BgColor,TextColor
+
+b:Button("Auto HitBadGuys",function()
+        game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "Note:";
+        Text = "Once you see one, Click this button.";
+        })
+while wait() do 
+     for i,v in pairs(game.Workspace.BadGuys:GetChildren()) do
+          game:GetService("ReplicatedStorage").RemoteEvents.HitBadguy:FireServer(v, 8)
+     end
+end
+end)
+
+b:Button("Inf Health!",function()
+        game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "Loop healing...";
+        Text = "This may not work.";
+        })
+while true do
+wait()
+game:GetService("ReplicatedStorage").RemoteEvents.Energy:FireServer(999999, nil)
+end
+end)
+
+b:Button("TeddyBear",function()
+        game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "Giving..";
+        Text = "This turns you invisible.";
+        })
+game:GetService("ReplicatedStorage").RemoteEvents.GiveTool:FireServer("TeddyBloxpin")
+end)
+
+local b = w:CreateFolder("Tp's")
+
+b:Label("Teleports",Color3.fromRGB(91,190,44),Color3.fromRGB(25,25,25)) --BgColor,TextColor
+
+b:Button("House",function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-36, 3, -200)
+end)
+
+b:Button("Basement",function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(71, -15, -163)
+end)
+
+b:Button("SewerDrain",function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(129, 3, -125)
+end)
+
+b:Button("Store",function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-422, 3, -121)
+end)
+
+b:Button("Attic",function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-16, 35, -220)
+end)
+
+b:Button("Boss Room",function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-39, -287, -1480)
+end)
+
+local b = w:CreateFolder("Misc")
+
+b:Label("miscellaneous",Color3.fromRGB(91,190,44),Color3.fromRGB(25,25,25)) --BgColor,TextColor
+
+b:Button("Befriend cat",function()
+        game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "Giving fish...";
+        Text = "Take care of Mr. Meows.";
+        })
+local Target = game:GetService("ReplicatedStorage").RemoteEvents.Cattery;
+Target:FireServer();
+end)
+
+b:Button("Cure",function()
+        game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "Giving..";
+        Text = "This is really OP.";
+        })
+game:GetService("ReplicatedStorage").RemoteEvents.GiveTool:FireServer("Cure")
+end)
+
+b:Button("Pie",function()
+        game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "Giving..";
+        Text = "It doesn't heal u btw.";
+        })
+game:GetService("ReplicatedStorage").RemoteEvents.GiveTool:FireServer("Pie")
+end)
+
+b:Button("HealAll",function()
+        game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "Healing all...";
+        Text = "Medkit must be equipped.";
+        })
+for i,v in pairs(game:GetService("Players"):GetChildren()) do
+   game:GetService("ReplicatedStorage").RemoteEvents.HealPlayer:FireServer(v)
+end
+end)
+
+b:Button("Plank",function()
+        game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "Giving..";
+        Text = "Only can give 5 u greedy noob.";
+        })
+game:GetService("ReplicatedStorage").RemoteEvents.GiveTool:FireServer("Plank")
+end)
+
+local b = w:CreateFolder("Settings")
+
+b:DestroyGUI()
+
+b:GuiSettings() 
