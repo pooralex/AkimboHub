@@ -469,4 +469,3 @@ function library:CreateTab(text)
 	end
 	return a;
 end
-return library
